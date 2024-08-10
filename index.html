@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            /* margin: 0;padding: 0; */
+            background-image: url("https://img.freepik.com/free-vector/dark-carbon-fiber-texture-pattern-background_1017-37140.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1723161600&semt=ais_hybrid");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+
+        }
+        /* .head{
+            border: 2px solid red;
+            max-width: 100vw;
+            height: 22px;
+            margin: 0 5px;
+            color: white;
+        } */
+        .container {
+            margin: 5px 5px 0px 5px;
+            border-radius: 8px 8px 0px 0px;
+            max-width: 100vw;
+            height: 40vh;
+            background-image: url("https://m.media-amazon.com/images/I/61y58Gl8TeL._AC_UF350,350_QL80_.jpg");
+            background-size: fill;
+            background-position: 0px -60px;
+            background-attachment: scroll;
+
+        }
+
+        .bottom {
+            font-size: medium;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding: 3px;
+            margin: 0px 5px;
+            font-weight: 1000;
+            color: whitesmoke;
+            background-color: rgb(161, 157, 157);
+            border-radius: 0px 0px 28px 28px;
+            text-align: center;
+            opacity: 0.9;
+
+        }
+
+        h4 {
+            padding: 0;
+            margin: 0;
+            color: red;
+        }
+
+        .infinity-text {
+            padding: 14px;
+        }
+
+        .infinity-text span {
+            display: inline-block;
+            opacity: 0;
+            animation: appearFromInfinity 1s ease-out forwards;
+        }
+
+        .infinity-text span:nth-child(1) {
+            animation-delay: 0s;
+        }
+
+        .infinity-text span:nth-child(2) {
+            animation-delay: 0.1s;
+        }
+
+        .infinity-text span:nth-child(3) {
+            animation-delay: 0.2s;
+        }
+
+        .infinity-text span:nth-child(4) {
+            animation-delay: 0.3s;
+        }
+
+        .infinity-text span:nth-child(5) {
+            animation-delay: 0.4s;
+        }
+
+        .infinity-text span:nth-child(6) {
+            animation-delay: 0.5s;
+        }
+
+        .infinity-text span:nth-child(7) {
+            animation-delay: 0.6s;
+        }
+
+        @keyframes appearFromInfinity {
+            0% {
+                transform: translateX(50vw);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        .goat {
+            background-color: #cec9c9;
+            color: rgb(3, 3, 3);
+            padding: 10px;
+            margin: 20px auto;
+            border-radius: 8px;
+            width: 240px;
+            height: 100px;
+            opacity: 0.9;
+            animation: moveShadow 0.9s infinite;
+            text-align: center;
+            font-size: larger;
+        }
+
+        @keyframes moveShadow {
+            0% {
+                box-shadow: 2px 8px 30px rgba(255, 0, 0, 0.986);
+            }
+
+            25% {
+                box-shadow: 2px 8px 30px rgba(95, 27, 27, 0.959);
+            }
+
+            50% {
+                box-shadow: 2px 8px 30px rgb(248, 3, 3);
+            }
+
+            75% {
+                box-shadow: 2px 8px 30px rgba(73, 19, 19, 0.7)
+            }
+
+            100% {
+                box-shadow: 2px 8px 30px rgba(224, 8, 8, 0.959);
+            }
+        }
+
+        h2 {
+            margin: 0;
+            padding: 0;
+        }
+
+        .productheading {
+            background-color: rgb(196, 181, 253);
+            color: rgb(43, 21, 21);
+            text-align: center;
+            margin: 0px 5px;
+            font-style: oblique;
+        }
+
+
+        .products {
+
+            background-color: rgba(255, 255, 255, 0.692);
+            margin: 2px 5px;
+            max-width: 100vw;
+            overflow: hidden;
+
+        }
+
+        .prod {
+            max-width: 100vw;
+            padding: 3px;
+            height: fit-content;
+            margin: 10px;
+            padding: 20px 0px;
+            border-radius: 12px;
+            background-color: black;
+        }
+
+        img {
+            margin: 0;
+            padding: 20px;
+            width: 100%;
+            height: fit-content;
+            border-radius: 20px;
+            box-sizing: border-box;
+            border: 4px solid black;
+
+
+        }
+
+        .btn {
+            background-color: rgb(236, 236, 65);
+            margin: 0px 5px;
+            border-radius: 10px;
+        }
+
+        button {
+
+            height: 50px;
+            width: 100px;
+            border-radius: 20px;
+            margin: 10px;
+            font-size: 20px;
+            border: 3px solid black;
+        }
+
+        .buybtn {
+            float: right;
+            background-color: rgb(143, 211, 231);
+        }
+
+        .previewbtn {
+            background-color: rgb(105, 236, 164);
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+
+        }
+
+
+        @media only screen and (max-width:1024px) and (min-width:600px) {
+            .bottom {
+            font-size: 25px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding: 3px;
+            margin: 0px 5px;
+            font-weight: 1000;
+            color: whitesmoke;
+            background-color: rgb(161, 157, 157);
+            border-radius: 0px 0px 28px 28px;
+            text-align: center;
+            opacity: 0.9;
+
+        }
+            .goat {
+            background-color: #cec9c9;
+            color: rgb(3, 3, 3);
+            padding: 10px;
+            margin: 20px auto;
+            border-radius: 8px;
+            width: 400px;
+            height: 120px;
+            opacity: 0.9;
+            animation: moveShadow 0.9s infinite;
+            text-align: center;
+            font-size: 30px;
+        }
+            .products {
+                display:flex;
+                flex-wrap: wrap;
+                background-color: rgba(255, 255, 255, 0.692);
+                margin: 2px 5px;
+                max-width: 100vw;
+                overflow: hidden;
+
+            }
+
+            .prod {
+                width: 46.41%;
+                padding: 3px;
+                height: 340px;
+                margin: 10px;
+                padding: 20px 0px;
+                border-radius: 12px;
+                background-color: black;
+                position: relative;
+                
+            }
+
+            img {
+                margin: 0;
+                padding: 20px;
+                width: 100%;
+                height: 300px;
+                border-radius: 20px;
+                box-sizing: border-box;
+                border: 4px solid black;
+                object-fit: contain;
+                object-position: center;
+                
+
+            }
+
+            .btn {
+                background-color: rgb(236, 236, 65);
+                margin: 0px 5px;
+                border-radius: 10px;
+                position: absolute;
+                bottom: 10px;
+                left: 10px;
+                right: 10px;
+            }
+
+            button {
+                height: 50px;
+                width: 100px;
+                border-radius: 20px;
+                margin: 8px;
+                font-size: 20px;
+                border: 3px solid black;
+            }
+
+            .buybtn {
+                float: right;
+                background-color: rgb(143, 211, 231);
+            }
+
+            .previewbtn {
+                background-color: rgb(105, 236, 164);
+            }
+
+            a {
+                color: black;
+                text-decoration: none;
+
+            }
+        }
+        @media only screen and (max-width:3840px) and (min-width:1024px) {
+            .bottom {
+            font-size: 38px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding: 3px;
+            margin: 0px 5px;
+            font-weight: 1000;
+            color: whitesmoke;
+            background-color: rgb(161, 157, 157);
+            border-radius: 0px 0px 28px 28px;
+            text-align: center;
+            opacity: 0.9;
+
+        }
+            .goat {
+            background-color: #cec9c9;
+            color: rgb(3, 3, 3);
+            padding: 10px;
+            margin: 20px auto;
+            border-radius: 8px;
+            width: 700px;
+            height: 160px;
+            opacity: 0.9;
+            animation: moveShadow 0.9s infinite;
+            text-align: center;
+            font-size: 57px;
+            }
+            .productheading {
+            height:50px;
+            background-color: rgb(196, 181, 253);
+            color: rgb(43, 21, 21);
+            text-align: center;
+            margin: 0px 5px;
+            font-style: oblique;
+        }
+        h2 {
+            margin: 0;
+            padding: 0;
+            font-size: 43px;
+        }
+            .products {
+                display:flex;
+                flex-wrap: wrap;
+                background-color: rgba(255, 255, 255, 0.692);
+                margin: 2px 5px;
+                max-width: 100vw;
+                overflow: hidden;
+
+            }
+
+            .prod {
+                width: 31%;
+                padding: 3px;
+                height: 340px;
+                margin: 10px;
+                padding: 20px 0px;
+                border-radius: 12px;
+                background-color: black;
+                position: relative;
+                
+            }
+
+            img {
+                margin: 0;
+                padding: 20px;
+                width: 100%;
+                height: 300px;
+                border-radius: 20px;
+                box-sizing: border-box;
+                border: 4px solid black;
+                object-fit: contain;
+                object-position: center;
+                
+
+            }
+
+            .btn {
+                background-color: rgb(236, 236, 65);
+                margin: 0px 5px;
+                border-radius: 10px;
+                position: absolute;
+                bottom: 10px;
+                left: 10px;
+                right: 10px;
+            }
+
+            button {
+                height: 50px;
+                width: 100px;
+                border-radius: 20px;
+                margin: 8px;
+                font-size: 20px;
+                border: 3px solid black;
+            }
+
+            .buybtn {
+                float: right;
+                background-color: rgb(143, 211, 231);
+            }
+
+            .previewbtn {
+                background-color: rgb(105, 236, 164);
+            }
+
+            a {
+                color: black;
+                text-decoration: none;
+
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <!-- <header>
+            <nav>
+            <div class="head">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similiqu</div>
+            </nav>
+        </header> -->
+        <div class="container">
+            <h1 class="infinity-text">
+                <span>W</span><span>E</span><span>L</span><span>C</span><span>O</span><span>M</span><span>E</span>
+                <h1>
+        </div>
+        <div class="bottom">
+            You have successfully arrived on the store
+            <h4>GRAB Hot Deals Now!!</h4>
+        </div>
+        <div class="goat">
+            G.O.A.T Offers
+        </div>
+        <div class="productheading">
+            <h2>Product List:[Best Offers]</h2>
+        </div>
+        <div class="products">
+            <div class="prod"><img class="img1" src="https://m.media-amazon.com/images/I/61XGPhtYGjL._SY450_.jpg"
+                    alt="">
+                <div class="btn">
+                    <button class="previewbtn">
+                        <a href="">Preview</a>
+                    </button>
+                    <button class="buybtn">
+                        <a href="https://amzn.to/3YCJ4ok">Buy</a>
+                    </button>
+                </div>
+            </div>
+            <div class="prod"><img class="img2" src="https://tinuiti.com/wp-content/uploads/2023/12/alexa-cp-dot-1.jpg"
+                    alt="">
+                <div class="btn">
+                    <button class="previewbtn">
+                        <a href="">Preview</a>
+                    </button>
+                    <button class="buybtn">
+                        <a href="https://amzn.to/3YCJ4ok">Buy</a>
+                    </button>
+                </div>
+            </div>
+            <div class="prod"><img class="img3" src="https://m.media-amazon.com/images/I/61eTrIO5GcL.jpg" alt="">
+                <div class="btn">
+                    <button class="previewbtn">
+                        <a href="">Preview</a>
+                    </button>
+                    <button class="buybtn">
+                        <a href="https://amzn.to/3YCJ4ok">Buy</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
